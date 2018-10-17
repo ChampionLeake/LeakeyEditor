@@ -6,6 +6,7 @@ LeakeyEditor is a simple text editor, scripted in Python, along with the Tkinter
 * Tkinter
 
 ## KNOWN BUGS/ISSUES:
+I encourage those who find any bugs or issues with the app to submit an "Issue" on this repository.
 * "Save" works just like "Save As"
 
 ## TO-DO List:
