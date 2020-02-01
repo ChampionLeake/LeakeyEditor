@@ -36,14 +36,6 @@ def saveFile():
     data = workArea.get(0.0, END)
     with open(file, "w") as f:
         f.write(data)
-	
-def saveAs():
-	file = filedialog.asksaveasfile(mode='w')
-
-	if file != None:
-		data = text.get(1.0, END+'-1c')
-		file.write(data)
-		file.close()
 
 def exitRoot():
 	if messagebox.askyesno("Quit", "Are you sure you want to quit?"):
@@ -71,7 +63,6 @@ filemenu = Menu(menubar)
 filemenu.add_command(label="New", command=newFile)
 filemenu.add_command(label="Open", command=openFile)
 filemenu.add_command(label="Save", command=saveFile)
-filemenu.add_command(label="Save As...", command=saveAs)
 filemenu.add_separator()
 filemenu.add_command(label="Quit", command=exitRoot)
 menubar.add_cascade(label="File", menu=filemenu)
